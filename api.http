@@ -1,0 +1,41 @@
+#  we can use this file with REST clientPOST 
+
+POST http://127.0.0.1:5000/bands/
+Content-Type: application/json
+
+
+{
+    "name":"Bords of Canda",
+    "genre":"Xx"
+}
+
+
+
+###
+
+GET http://127.0.0.1:5000/bands/
+
+
+###
+GET http://127.0.0.1:5000/bands?genre=z
+
+
+
+###
+
+POST http://127.0.0.1:5000/bands/
+Content-Type: application/json
+
+
+{
+    "name":"C",
+    "genre":"X",
+    "albums":[{
+        "title":"F",
+        "release_date":"1999-09-04"
+    },
+    {
+        "title":"O",
+        "release_date":"1999-09-04"
+    }]
+}
